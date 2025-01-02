@@ -271,6 +271,10 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libqdMetaData
 
+# WiFi Display
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
 # WiFi firmware symlinks
 PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
