@@ -26,6 +26,8 @@ namespace_imports = [
     'hardware/qcom/display/sde-drm',
     'hardware/qcom/media/mm-core',
     'hardware/xiaomi',
+    'vendor/qcom/opensource/commonsys/display',
+    'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/dataservices',
     'vendor/qcom/common/vendor/display',
     'vendor/qcom/common/vendor/display/4.14',
