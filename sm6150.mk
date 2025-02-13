@@ -248,6 +248,10 @@ PRODUCT_SOONG_NAMESPACES += \
     bootable/deprecated-ota \
     hardware/xiaomi
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.qti
+
 # Uevent
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/ueventd.xiaomi_sm6150.rc:$(TARGET_COPY_OUT_ODM)/etc/ueventd.rc
