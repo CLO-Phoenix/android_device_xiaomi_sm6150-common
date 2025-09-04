@@ -371,6 +371,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom/wlan
 
 PRODUCT_PACKAGES += \
+    android.media.audio.common.types-V2-cpp \
     android.hardware.wifi-service \
     hostapd \
     ipacm \
