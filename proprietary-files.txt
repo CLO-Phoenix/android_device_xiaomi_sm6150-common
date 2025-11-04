@@ -407,6 +407,13 @@ vendor/bin/time_daemon|48401d7f85c87aa3e12ce7b4a969a50cbf59c293
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib64/libtime_genoff.so|8bb116ad297a5e4a94da2f10509509cb6e863a5f
 
+
+# Trusted User Interface
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so;MODULE_SUFFIX=_vendor
+
 # WiFi Display (system) - from dodge AP3A.240617.008
 system/framework/WfdCommon.jar;BOOT_JAR|7f5fa507edca51663be2d243a3bc72799c1a31e2
 system_ext/bin/wfdservice64|710637051aaf51050e4c9a102a65fc859fbdfdfd|d6fb12a1e0676e46f139598917fdfb5ed10b3cdd
