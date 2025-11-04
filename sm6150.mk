@@ -262,7 +262,6 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    libwpa_client \
     WifiOverlay
 
 PRODUCT_COPY_FILES += \
