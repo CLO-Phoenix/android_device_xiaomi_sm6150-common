@@ -47,6 +47,9 @@ TARGET_NO_BOOTLOADER := true
 # Display
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
 
+# Camera
+TARGET_CAMERA_SERVICE_EXT_LIB := //$(COMMON_PATH):libcameraservice_extension.sm6150
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 
