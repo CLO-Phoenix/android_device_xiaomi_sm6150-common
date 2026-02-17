@@ -33,7 +33,7 @@
 	android:icon="@mipmap/ic_launcher"
         android:label="@string/device_settings_app_name"
         android:persistent="true"
-	android:theme="@style/Theme.SubSettingsBase">
+	android:theme="@style/Theme.SubSettingsBase.Expressive">
 
         <receiver android:name=".BootCompletedReceiver"
                   android:exported="false">
@@ -51,8 +51,7 @@
         <activity
             android:name=".doze.DozeSettingsActivity"
             android:exported="false"
-            android:label="@string/ambient_display_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:label="@string/ambient_display_title">
 	    <intent-filter>
                 <action android:name="org.lineageos.settings.device.DOZE_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -93,8 +92,7 @@
 	 <activity
             android:name=".refreshrate.RefreshActivity" 
             android:label="@string/refresh_title" 
-            android:exported="false"
-            android:theme="@style/Theme.SubSettingsBase"> 
+            android:exported="false"> 
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -127,8 +125,7 @@
         <activity
             android:name=".DevicePreferenceActivity"
             android:label="@string/device_specific_settings_title"
-            android:exported="true"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -144,7 +141,6 @@
         <activity
             android:name=".gameoverlay.GameOverlaySettingsActivity"
             android:label="@string/game_overlay_title"
-            android:theme="@style/Theme.SubSettingsBase"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
