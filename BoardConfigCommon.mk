@@ -19,6 +19,9 @@ COMMON_PATH := device/xiaomi/sm6150-common
 # Inherit from proprietary files
 include vendor/xiaomi/sm6150-common/BoardConfigVendor.mk
 
+# Include Rom config
+include device/xiaomi/phoenix/rom_config.mk
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
@@ -85,7 +88,7 @@ BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 # Partitions
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/$(VENDOR_TARGET_DIR)/config/BoardConfigReservedSize.mk
 
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 
@@ -134,8 +137,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe
-include device/lineage/sepolicy/libion/sepolicy.mk
-include device/lineage/sepolicy/libperfmgr/sepolicy.mk
+include device/$(VENDOR_TARGET_DIR)/sepolicy/libion/sepolicy.mk
+include device/$(VENDOR_TARGET_DIR)/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
