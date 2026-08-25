@@ -45,7 +45,6 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
-	.add_needed('libaudiobase.so')
         .add_needed('libgui_shim.so'),
     'vendor/lib64/libdpps.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
