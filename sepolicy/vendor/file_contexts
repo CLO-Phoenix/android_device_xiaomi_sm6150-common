@@ -22,7 +22,6 @@
 /sys/devices/platform/soc/soc:qcom,dsi-display/dc_enable             u:object_r:sysfs_anti_flicker:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui                u:object_r:vendor_sysfs_fod:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display/hbm                   u:object_r:sysfs_hbm:s0
-/sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode             u:object_r:sysfs_doze:s0
 
 # Elliptic
 /dev/elliptic[0-9]                                                   u:object_r:ultrasound_device:s0
