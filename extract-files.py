@@ -29,6 +29,7 @@ namespace_imports = [
     'vendor/qcom/opensource/commonsys/display',
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/dataservices',
+    'vendor/qcom/common/system/wfd',
     'vendor/qcom/common/vendor/display',
     'vendor/qcom/common/vendor/display/4.14',
     'vendor/qcom/common/vendor/gps-legacy',
