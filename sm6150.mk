@@ -149,6 +149,9 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/android.hardware.audio.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.rc \
