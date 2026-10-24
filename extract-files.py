@@ -20,20 +20,15 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/xiaomi/sm6150-common',
-    'hardware/qcom/display',
-    'hardware/qcom/display/gralloc',
-    'hardware/qcom/display/libdebug',
-    'hardware/qcom/display/sde-drm',
-    'hardware/qcom/media/mm-core',
     'hardware/xiaomi',
-    'vendor/qcom/opensource/commonsys/display',
-    'vendor/qcom/opensource/commonsys-intf/display',
-    'vendor/qcom/opensource/dataservices',
     'vendor/qcom/common/system/wfd',
+    'vendor/qcom/common/system/perf',
+    'vendor/qcom/common/vendor/adreno/r',
     'vendor/qcom/common/vendor/display',
     'vendor/qcom/common/vendor/display/4.14',
     'vendor/qcom/common/vendor/gps-legacy',
     'vendor/qcom/common/vendor/keymaster',
+    'vendor/qcom/common/vendor/media/5.4',
     'vendor/qcom/common/vendor/wlan-legacy',
 ]
 
@@ -47,7 +42,6 @@ lib_fixups: lib_fixups_user_type = {
     (
         'com.qualcomm.qti.dpm.api@1.0',
         'libmmosal',
-        'vendor.qti.hardware.fm@1.0',
         'vendor.qti.imsrtpservice@3.0',
         'vendor.qti.hardware.wifidisplaysession@1.0',
         'vendor.qti.hardware.tui_comm@1.0',

@@ -207,12 +207,10 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     charging \
     display \
-    gps \
     init \
     media \
     overlay \
     perf \
-    telephony \
     usb \
     vibrator \
     wfd \
@@ -243,7 +241,6 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    bootable/deprecated-ota \
     hardware/xiaomi
 
 # Thermal

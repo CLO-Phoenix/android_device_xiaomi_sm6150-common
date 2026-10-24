@@ -10,6 +10,7 @@ vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsprpc.so
+vendor/lib/libcdsprpc.so
 vendor/lib/libcdsp_default_listener.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
@@ -165,6 +166,7 @@ vendor/bin/dspservice|a7344fc3d27a49df30858ebc3f73ee5818e752d4
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so|223a9268bd92bd80dab3df02fbef38ea86bcbadd
+vendor/lib/vendor.qti.hardware.dsp@1.0.so
 
 # FM
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so;MODULE_SUFFIX=_vendor
@@ -448,9 +450,6 @@ vendor/lib/libwfduibcsrcinterface_proprietary.so|826a3a7c9f81e63abe1cf805e6abca2
 vendor/lib/libwfdutils_proprietary.so|44bbe06b1f21d93ee21aca67b964e3c8e0ef8f78
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE_SUFFIX=_vendor|1c38bab7199c0ebd418749b16dc8e10610eaf17c
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|a964ebf868307e4ef84c614154184d9c3afe8c86
-
-# WLAN
-vendor/bin/cnss-daemon
 
 # Xiaomi MAC
 vendor/bin/nv_mac
